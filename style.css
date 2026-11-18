@@ -1,12 +1,12 @@
 :root {
-  --colore-primario: #ae381a;
-  --colore-primario-scuro: #44160d;
-  --colore-sfondo: #f5f2e9;
-  --colore-testo: #202923;
-  --font-testo: "Trebuchet MS", Arial, sans-serif;
---font-titoli: Garamond, "Times New Roman", serif;;
+  --colore-primario: #F04B2F;     
+  --colore-primario-scuro: #321B18; 
+  --colore-sfondo: #F3EDE0;         
+  --colore-testo: #321B18;
+  --colore-accento: #4777E8;       
+  --font-testo: "Roboto Condensed", Arial, sans-serif;
+  --font-titoli:"Bebas Neue", sans-serif;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -40,8 +40,22 @@ a:focus-visible {
 }
 
 .site-header {
-  padding: 1.25rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  padding: 1rem 0;
+
+  background: var(--colore-sfondo);
   border-bottom: 4px solid var(--colore-primario);
+}
+
+
+.site-header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
 }
 
 .brand {
@@ -60,19 +74,58 @@ a:focus-visible {
   font-weight: normal;
 }
 
-nav {
-  margin-top: 1rem;
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  margin: 0;
 }
 
-nav a {
-  display: inline-block;
-  margin-right: 1rem;
-  padding: 0.25rem 0;
+.main-nav a {
+  display: block;
+  margin: 0;
+  padding: 0.2rem 0;
+
+  color: var(--colore-primario);
+  text-decoration: none;
 }
 
-nav a[aria-current="page"] {
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+.main-nav a[aria-current="page"] {
   font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
+
+
+@media (min-width: 600px) {
+
+  .site-header .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .main-nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .main-nav a {
+    padding: 0.5rem 0;
+  }
+
+}
+
 
 .intro {
   padding: 3rem 0 1rem;
@@ -80,7 +133,7 @@ nav a[aria-current="page"] {
 
 .eyebrow,
 .event-meta {
-  color: #46564b;
+  color: var(--colore-accento);
   font-size: 0.875rem;
   font-weight: bold;
 }
@@ -128,7 +181,7 @@ h3 {
 }
 
 .button-link:hover {
-  background: var(--colore-primario-scuro);
+  background: var(--colore-accento);
 }
 
 .content-section {

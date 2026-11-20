@@ -5,44 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Info e luoghi - Segnale</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.css">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
   <a class="skip-link" href="#contenuto">
     Vai al contenuto
   </a>
 
-
   <header class="site-header">
     <div class="container">
-
       <a class="brand" href="index.html">
         Segnale
         <span>Festival di design</span>
       </a>
-  
+
       <nav class="main-nav" aria-label="Navigazione principale">
         <a href="index.html">Home</a>
         <a href="programma.html">Programma</a>
         <a href="info.html" aria-current="page">Info e luoghi</a>
       </nav>
-
     </div>
   </header>
 
   <main id="contenuto" class="container">
 
-
     <section class="intro" aria-labelledby="titolo-info">
-
       <p class="eyebrow">
         12–13 giugno · Torino · Festival immaginario
       </p>
@@ -63,28 +57,50 @@
         e progetti dedicati al design e
         alla comunicazione visiva.
       </p>
-
     </section>
 
+    <section class="content-section" aria-labelledby="titolo-meteo">
+      <p class="eyebrow">Informazioni meteo</p>
 
-    <section class="content-section"
-      aria-labelledby="titolo-galleria">
+      <h2 id="titolo-meteo">Meteo a Torino adesso</h2>
 
+      <p class="reading-text">
+        Scopri la temperatura e la velocità del vento rilevate a Torino in questo momento.
+      </p>
+
+      <div id="dati-meteo" class="venue-location" role="status" aria-live="polite">
+        Caricamento dei dati meteorologici...
+      </div>
+
+      <p class="reading-text">
+        I dati mostrano le condizioni meteorologiche attuali e non sono una previsione per le date del festival.
+      </p>
+
+      <p class="reading-text">
+        Fonte:
+        <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">
+          Open-Meteo
+        </a>.
+        I dati sono distribuiti con licenza
+        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">
+          Creative Commons Attribution 4.0 International (CC BY 4.0)
+        </a>.
+      </p>
+    </section>
+
+    <section class="content-section" aria-labelledby="titolo-galleria">
       <p class="eyebrow">
         Scoprire le sedi
       </p>
 
       <h2 id="titolo-galleria">
-        Spazi diversi,idee che si incontrano.
+        Spazi diversi, idee che si incontrano.
       </h2>
-   
-      <div class="swiper venue-swiper">
 
+      <div class="swiper venue-swiper">
         <div class="swiper-wrapper">
 
-    
           <article class="swiper-slide venue-card">
-
             <img
               src="assets/luoghi/sede-centrale.jpg"
               alt="Sede Centrale"
@@ -93,7 +109,6 @@
             >
 
             <div class="venue-card-content">
-
               <p class="eyebrow">
                 01 · Sede Centrale
               </p>
@@ -105,24 +120,18 @@
               <p class="reading-text">
                 Officina Nord nel festival immaginario.
               </p>
-
             </div>
-
           </article>
 
-
- 
           <article class="swiper-slide venue-card">
-
             <img
               src="assets/luoghi/politecnico-valentino.jpg"
-              alt="Politecnico valentino"
+              alt="Politecnico Valentino"
               width="1200"
               height="700"
             >
 
             <div class="venue-card-content">
-
               <p class="eyebrow">
                 02 · Politecnico al Valentino
               </p>
@@ -134,15 +143,10 @@
               <p class="reading-text">
                 Spazio Forma nel festival immaginario.
               </p>
-
             </div>
-
           </article>
 
-
-  
           <article class="swiper-slide venue-card">
-
             <img
               src="assets/luoghi/mirafiori.jpg"
               alt="Mirafiori"
@@ -151,7 +155,6 @@
             >
 
             <div class="venue-card-content">
-
               <p class="eyebrow">
                 03 · Sede di Mirafiori
               </p>
@@ -163,16 +166,12 @@
               <p class="reading-text">
                 Cortile Comune nel festival immaginario.
               </p>
-
             </div>
-
           </article>
 
         </div>
 
-
         <div class="venue-controls">
-
           <button
             class="swiper-button-prev"
             type="button"
@@ -186,40 +185,33 @@
             type="button"
             aria-label="Fotografia successiva">
           </button>
-
         </div>
-
       </div>
-
     </section>
-    
-    <section class="content-section"
-      aria-labelledby="titolo-mappa">
-    
+
+    <section class="content-section" aria-labelledby="titolo-mappa">
       <p class="eyebrow">
         Come arrivare
       </p>
-    
+
       <h2 id="titolo-mappa">
         La mappa del festival.
       </h2>
-    
+
       <p class="reading-text">
         Consulta la mappa per individuare
         le tre sedi e organizzare il tuo percorso.
       </p>
-    
+
       <div class="map-container">
-    
         <iframe
           id="mappa-sedi"
           title="Mappa delle tre sedi di riferimento per il festival Segnale a Torino"
           src="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true#12/45.0465/7.6528"
           loading="lazy">
         </iframe>
-    
       </div>
-    
+
       <p>
         <a
           href="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true#12/45.0465/7.6528"
@@ -228,89 +220,74 @@
           Visualizza la mappa a schermo intero
         </a>
       </p>
-    
     </section>
 
-<section class="content-section"
-  aria-labelledby="titolo-sedi">
+    <section class="content-section" aria-labelledby="titolo-sedi">
+      <h2 id="titolo-sedi">
+        Indirizzi delle sedi
+      </h2>
 
-  <h2 id="titolo-sedi">
-    Indirizzi delle sedi
-  </h2>
+      <div class="venue-list">
 
-  <div class="venue-list">
+        <article class="venue-location">
+          <h3>Sede centrale</h3>
 
-    <article class="venue-location">
+          <p>
+            Corso Duca degli Abruzzi 24,
+            Torino
+          </p>
 
-      <h3>Sede centrale</h3>
+          <a
+            href="https://www.google.com/maps/search/?api=1&amp;query=Corso+Duca+degli+Abruzzi+24+Torino"
+            target="_blank"
+            rel="noopener noreferrer">
+            Indicazioni stradali
+          </a>
+        </article>
 
-      <p>
-        Corso Duca degli Abruzzi 24,
-        Torino
-      </p>
+        <article class="venue-location">
+          <h3>Politecnico al Valentino</h3>
 
-      <a
-        href="https://www.google.com/maps/search/?api=1&amp;query=Corso+Duca+degli+Abruzzi+24+Torino"
-        target="_blank"
-        rel="noopener noreferrer">
-        Indicazioni stradali
-      </a>
+          <p>
+            Viale Mattioli 39,
+            Torino
+          </p>
 
-    </article>
+          <a
+            href="https://www.google.com/maps/search/?api=1&amp;query=Viale+Mattioli+39+Torino"
+            target="_blank"
+            rel="noopener noreferrer">
+            Indicazioni stradali
+          </a>
+        </article>
 
-    <article class="venue-location">
+        <article class="venue-location">
+          <h3>Sede di Mirafiori</h3>
 
-      <h3>Politecnico al Valentino</h3>
+          <p>
+            Corso Luigi Settembrini 178,
+            Torino
+          </p>
 
-      <p>
-        Viale Mattioli 39,
-        Torino
-      </p>
+          <a
+            href="https://www.google.com/maps/search/?api=1&amp;query=Corso+Luigi+Settembrini+178+Torino"
+            target="_blank"
+            rel="noopener noreferrer">
+            Indicazioni stradali
+          </a>
+        </article>
 
-      <a
-        href="https://www.google.com/maps/search/?api=1&amp;query=Viale+Mattioli+39+Torino"
-        target="_blank"
-        rel="noopener noreferrer">
-        Indicazioni stradali
-      </a>
-
-    </article>
-
-    <article class="venue-location">
-
-      <h3>Sede di Mirafiori</h3>
-
-      <p>
-        Corso Luigi Settembrini 178,
-        Torino
-      </p>
-
-      <a
-        href="https://www.google.com/maps/search/?api=1&amp;query=Corso+Luigi+Settembrini+178+Torino"
-        target="_blank"
-        rel="noopener noreferrer">
-        Indicazioni stradali
-      </a>
-
-    </article>
-
-  </div>
-
-</section>
+      </div>
+    </section>
 
   </main>
 
-
   <footer class="site-footer">
-
     <div class="container">
-
       <p>
         Segnale · Progetto didattico · Festival immaginario
       </p>
-
     </div>
-
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js"></script>
@@ -337,6 +314,64 @@
         onlyInViewport: true
       }
     });
+  </script>
+
+  <script>
+    async function caricaMeteo() {
+      const contenitore = document.getElementById("dati-meteo");
+
+      const url = "https://api.open-meteo.com/v1/forecast?latitude=45.0703&longitude=7.6869&current=temperature_2m,wind_speed_10m&timezone=Europe%2FRome";
+
+      try {
+        const risposta = await fetch(url);
+
+        if (!risposta.ok) {
+          throw new Error("Errore nella richiesta meteo.");
+        }
+
+        const dati = await risposta.json();
+
+        if (!dati.current) {
+          throw new Error("Dati meteorologici non disponibili.");
+        }
+
+        const temperatura = dati.current.temperature_2m;
+        const vento = dati.current.wind_speed_10m;
+        const ora = dati.current.time;
+
+        const unitaTemperatura =
+          dati.current_units?.temperature_2m || "°C";
+
+        const unitaVento =
+          dati.current_units?.wind_speed_10m || "km/h";
+
+        contenitore.replaceChildren();
+
+        const paragrafoTemperatura = document.createElement("p");
+        paragrafoTemperatura.textContent =
+          "Temperatura: " + temperatura + " " + unitaTemperatura;
+
+        const paragrafoVento = document.createElement("p");
+        paragrafoVento.textContent =
+          "Velocità del vento: " + vento + " " + unitaVento;
+
+        const paragrafoOra = document.createElement("p");
+        paragrafoOra.textContent =
+          "Ora dell'ultimo dato: " + ora;
+
+        contenitore.appendChild(paragrafoTemperatura);
+        contenitore.appendChild(paragrafoVento);
+        contenitore.appendChild(paragrafoOra);
+
+      } catch (errore) {
+        console.error("Errore nel caricamento del meteo:", errore);
+
+        contenitore.textContent =
+          "Non è stato possibile caricare i dati meteorologici. Riprova più tardi.";
+      }
+    }
+
+    caricaMeteo();
   </script>
 
 </body>
